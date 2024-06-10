@@ -12,10 +12,52 @@
 .fa-solid {
     color: var(--main-color);
 }
+header{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.navbar .logo-navbar img{
+    height: 35px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .liens-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar .liens-nav ul li{
+    margin: 0 35px;
+    padding-top: 20px;
+}
+
+.navbar .liens-nav ul li:hover{
+    color: #0065FC;
+    border-top: 2px solid var(--main-color);
+    padding-top: 18px;
+}
+
+.présentation h1{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.présentation p{
+    margin-top: 10px;
+   
+}
 
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .main-container {
