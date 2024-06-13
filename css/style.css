@@ -13,11 +13,13 @@ header{
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0px 50px;
 }
-/****** Menu de navigation ******/
+
+/** => header : Menu de navigation ******/
 
 .navbar .logo-navbar img{
-    height: 35px;
+    height: 19px;
 }
 
 .navbar{
@@ -44,6 +46,9 @@ header{
 }
 
 /****** Présentation du site ******/
+.présentation{
+    padding: 0px 50px;
+}
 
 .présentation h1{
     font-size: 22px;
@@ -53,7 +58,6 @@ header{
 
 .présentation p{
     margin-top: 10px;
-   
 }
 
 /****** Barre de recherche ******/
@@ -62,6 +66,8 @@ header{
     display: flex;
     flex-direction:row ;
     align-items:center ;
+    margin: 20px 0px;
+    padding: 0px 50px;
 }
 
 .iconmaps{
@@ -104,12 +110,20 @@ form input{
 
 /****** Filtres avec boutons ******/
 
+.filtres{
+    margin: 30px 0px;
+    padding: 0px 50px;
+}
 .filtres, .listefiltres{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.filtres h2{
+    font-size: 22px;
 }
 
 .btnfiltre{
@@ -139,6 +153,8 @@ form input{
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    margin-bottom: 20px;
+    padding: 0px 50px;
 }
 
 .iconinfo{
@@ -150,23 +166,32 @@ form input{
 }
 
 /****** Hébergements by me ******/
+
 .hebergements-cards{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .link-cards{
     width: 30%;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 20px;
 }
+
+.link-cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.267);
+}
+
 .room-card{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    margin-top: 33px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -201,7 +226,51 @@ form input{
 
 /****** fin hébergements by me ******/
 
+/****** Activités by me ******/
 
+.activities{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.activities-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activity-link{
+    width: 30%;
+    background: var(--main-background-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.activity-link:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.267);
+}
+
+.activities img{
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activities h3{
+    font-size: 16px;
+    margin: 15px 20px 20px;
+}
+
+.activities h2{
+    font-size: 22px;
+}
+
+/****** fin activités by me ******/
 
 body {
     display: flex;
