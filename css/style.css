@@ -129,6 +129,10 @@ form input {
     cursor: pointer;
 }
 
+.searchform-icon {
+    display: none;
+}
+
 /****** end Search Bar ******/
 
 
@@ -474,5 +478,273 @@ footer li:hover{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        margin: 0px;
+    }
+
+    /****** Header mob ******/
+    header{
+        /*display: flex;
+        flex-direction: column;*/
+        padding: 30px 0;
+    }
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-links{
+        width: 100%;
+    }
+
+    .navbar ul{
+        width: 100%;
+        padding: 0;
+        display:flex;
+    }
+
+    .navbar .navbar-links ul li {
+        width: 50%;
+        margin:0;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .navbar .navbar-links ul li:hover {
+        color: var(--main-color);
+        border-top: 0;
+        border-bottom: 2px solid var(--main-color);
+        padding-top: 18px;
+    }
+
+    /****** end Header mob ******/
+
+    /****** Introduction mob ******/
+
+    .introduction{
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .introduction h1{
+        margin:0;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .introduction p{
+        margin:0;
+        padding-top: 5px;
+    }
+
+    /****** end Introduction mob ******/
+
+    /****** Search Bar mob ******/
+
+    .searchform {
+        padding: 8px;
+    }
+
+    .searchform-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius : 15px;
+        border: none;
+        background-color: var(--main-color);
+    }
+
+    .searchform-btn {
+        display: none;
+    }
+
+    .icon-search{
+        background-color: var(--main-color);
+    }
+
+    /****** end Searc Bar ******/
+
+    /****** Filters mob ******/
+
+    .filters {
+        padding: 0 8px;
+    }
+
+    .filters h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .filters-btn {
+        padding: 10px 12px;
+    }
+
+    .filters-btn span{
+        font-size: 15px;
+    }
+
+    /****** end Filters ******/
+
+    /****** Search Result mob ******/
+
+    .search-result {
+        padding: 0 10px;
+    }
+
+    .search-result p {
+        font-size: 15px;
+    }
+
+    .icon-info {
+        padding: 6px 11px;
+    }
+
+    /****** end Search Result ******/
+
+    .main-container {
+            padding: 0%;
+        }
+
+
+    /****** Hébergements and Populaires mob ******/
+    
+    .hebergements-and-populaires{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .hebergements-and-populaires section{
+        border-radius: 0%;
+        padding: 20px 10px;
+    }
+
+    /****** end Hébergements and Populaires ******/
+
+    /****** Populaires mob ******/
+
+    .populaires {
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards .card{
+    margin-top: 15px;
+   }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .populaires-title {
+        padding: 5px;
+    }
+    .card-rating .fa-star {
+        font-size: 13px;
+    }
+
+    /****** end Populaires ******/
+
+    /****** Lodging mob ******/
+
+    .hebergements-and-populaires .lodging{
+        background: none;
+    }
+
+    .lodging {
+        width: 100%;
+    }
+
+    .lodging-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lodging-cards a{
+        width: 100%;
+    }
+
+    .card-title, .card-subtitle, .showmore-link {
+        font-size: 14px;
+    }
+
+    /****** Lodging mob ******/
+
+    .activities{
+        padding: 25px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .activities-list {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .activity-link {
+        width: 100%;
+    }
+
+    .activities h2{
+        font-size: 18px;
+    }
+
+    .activities img{
+        height: 150px;
+    }
+
+    .activity-to-do h3{
+        font-size: 13px;
+        margin: 15px 15px;
+    }
+
+    /****** end Lodging ******/
+
+    /****** Footer mob ******/
+
+    Footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+
+    .footer-link {
+        margin-bottom: 20px;
+    }
+
+    .footer-link h2 {
+        margin-top: 25px; 
+        margin-bottom: 5px;
+    }
+
+    .footer-link ul {
+        margin: 0;
+    }
+
+    .footer-link ul li {
+        padding: 10px 0 0;
+        font-size: 15px;
+    }
+
 }
