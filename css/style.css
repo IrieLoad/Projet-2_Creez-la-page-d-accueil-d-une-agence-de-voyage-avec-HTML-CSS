@@ -18,6 +18,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -105,7 +106,6 @@ header {
 .fa-solid {
     color: var(--main-color);
     font-size: 20px;
-    background-color:var(--main-bg-color);
 }
 
 form input {
@@ -263,7 +263,7 @@ form input {
 .lodging-features {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .lodging-describe {
@@ -402,19 +402,16 @@ form input {
 footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 280px;
+    justify-content: space-evenly;
     background-color: var(--main-bg-color);
     width: 100%;
     margin-top: 50px;
-    padding-left: 20px;
 }
 
 .footer-link {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 footer h2 {
@@ -544,14 +541,12 @@ footer li:hover{
 
     /****** Header mob ******/
     header{
-        /*display: flex;
-        flex-direction: column;*/
         padding: 30px 0;
+        flex-direction: column;
     }
     
     .navbar{
         width: 100%;
-        display: flex;
         flex-direction: column;
     }
 
@@ -562,11 +557,10 @@ footer li:hover{
     .navbar ul{
         width: 100%;
         padding: 0;
-        display:flex;
     }
 
     .navbar .navbar-links ul li {
-        width: 50%;
+        width: 100%;
         margin:0;
         padding-bottom: 20px;
         display: flex;
@@ -575,29 +569,28 @@ footer li:hover{
     }
 
     .navbar .navbar-links ul li:hover {
-        color: var(--main-color);
-        border-top: 0;
+        border-top: none;
         border-bottom: 2px solid var(--main-color);
-        padding-top: 18px;
     }
 
     /****** end Header mob ******/
 
     /****** Introduction mob ******/
 
-    .introduction {
-        padding: 0 8px;
+    .introduction, .introduction h1, .introduction p {
         margin: 0;
     }
 
+    .introduction {
+        padding: 0 8px;
+    }
+
     .introduction h1 {
-        margin:0;
         padding-bottom: 10px;
         font-size: 25px;
     }
 
     .introduction p {
-        margin:0;
         padding-top: 5px;
     }
 
@@ -676,7 +669,6 @@ footer li:hover{
     /****** Hébergements and Populaires mob ******/
     
     .hebergements-and-populaires {
-        display: flex;
         flex-direction: column-reverse;
         padding: 0px;
         gap: 10px;
@@ -732,7 +724,6 @@ footer li:hover{
     }
 
     .lodging-cards {
-        display: flex;
         flex-direction: column;
     }
 
@@ -744,18 +735,18 @@ footer li:hover{
         font-size: 14px;
     }
 
-    /****** Lodging mob ******/
+    /****** end Lodging mob ******/
+
+    /****** Activities mob ******/
 
     .activities {
         padding: 25px;
         margin-top: 20px;
-        display: flex;
         flex-direction: column;
         box-sizing: border-box;
     }
 
     .activities-list {
-        display: flex;
         flex-direction: column;
         padding: 15px 0;
     }
@@ -782,10 +773,10 @@ footer li:hover{
     /****** Footer mob ******/
 
     Footer {
-        display: flex;
         flex-direction: column;
         padding-left: 20px;
         margin-top: 25px;
+        gap: 20px;  
     }
 
     .footer-link {
