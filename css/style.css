@@ -402,10 +402,12 @@ form input {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 280px;
     background-color: var(--main-bg-color);
     width: 100%;
     margin-top: 50px;
+    padding-left: 20px;
 }
 
 .footer-link {
@@ -444,13 +446,49 @@ footer li:hover{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    header, .introduction, .searchform, .filters, .search-result, .main-container {
+        padding-left: 30px;
+    }
+
+    /****** Hébergemetns and populaires Tab ******/
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    .section-title {
+        font-size: 20px;
+    }
+
+    /****** end Hébergemetns and populaires Tab ******/
+
+    /****** Lodging Tab ******/
+
+    .lodging {
         width: 100%;
     }
+
+    .lodging-cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lodging-describe .card-title {
+        font-size: 15px;
+    }
+
+    .lodging-describe .card-subtitle {
+        font-size: 14px;
+    }
+
+    .card-rating .fa-star {
+        font-size: 13px;
+    }
+
+    /****** end Lodging Tab ******/
+
+    /****** Populaires Tab ******/
 
     .populaires {
         width: 100%;
@@ -474,6 +512,27 @@ footer li:hover{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /****** end Populaires Tab ******/
+
+    /****** Activities Tab ******/
+
+    .activities-list {
+        padding-top: 20px;
+    }
+    .activities img {
+        height: 250px;
+    }
+
+    /****** end Activities Tab ******/
+
+    /****** Footer Tab ******/
+
+    footer {
+        gap: 150px;
+    }
+
+    /****** end Footer Tab ******/
 }
 
 /* Small devices (phones, less than 768px) */
@@ -526,18 +585,18 @@ footer li:hover{
 
     /****** Introduction mob ******/
 
-    .introduction{
+    .introduction {
         padding: 0 8px;
         margin: 0;
     }
 
-    .introduction h1{
+    .introduction h1 {
         margin:0;
         padding-bottom: 10px;
         font-size: 25px;
     }
 
-    .introduction p{
+    .introduction p {
         margin:0;
         padding-top: 5px;
     }
@@ -587,7 +646,7 @@ footer li:hover{
         padding: 10px 12px;
     }
 
-    .filters-btn span{
+    .filters-btn span {
         font-size: 15px;
     }
 
@@ -616,14 +675,14 @@ footer li:hover{
 
     /****** Hébergements and Populaires mob ******/
     
-    .hebergements-and-populaires{
+    .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
         padding: 0px;
         gap: 10px;
     }
 
-    .hebergements-and-populaires section{
+    .hebergements-and-populaires section {
         border-radius: 0%;
         padding: 20px 10px;
     }
@@ -645,11 +704,11 @@ footer li:hover{
         flex-direction: column;
     }
 
-    .populaires-cards .card{
+    .populaires-cards .card {
     margin-top: 15px;
    }
 
-    .populaires-cards a{
+    .populaires-cards a {
         width: 100%;
     }
 
@@ -664,7 +723,7 @@ footer li:hover{
 
     /****** Lodging mob ******/
 
-    .hebergements-and-populaires .lodging{
+    .hebergements-and-populaires .lodging {
         background: none;
     }
 
@@ -677,7 +736,7 @@ footer li:hover{
         flex-direction: column;
     }
 
-    .lodging-cards a{
+    .lodging-cards a {
         width: 100%;
     }
 
@@ -687,7 +746,7 @@ footer li:hover{
 
     /****** Lodging mob ******/
 
-    .activities{
+    .activities {
         padding: 25px;
         margin-top: 20px;
         display: flex;
@@ -705,15 +764,15 @@ footer li:hover{
         width: 100%;
     }
 
-    .activities h2{
+    .activities h2 {
         font-size: 18px;
     }
 
-    .activities img{
+    .activities img {
         height: 150px;
     }
 
-    .activity-to-do h3{
+    .activity-to-do h3 {
         font-size: 13px;
         margin: 15px 15px;
     }
@@ -747,4 +806,6 @@ footer li:hover{
         font-size: 15px;
     }
 
+    /****** end footer mob ******/
+    
 }
