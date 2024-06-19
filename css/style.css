@@ -13,12 +13,15 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width:1440px;
+    min-width: 320px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -32,7 +35,6 @@ a {
 
 header {
     display: flex;
-    flex-direction: row;
     list-style: none;
     padding: 0 50px;
 }
@@ -44,21 +46,26 @@ header {
     align-items: center;
 }
 
-.navbar .navbar-logo img {
+.navbar-logo img {
     height: 19px;
 }
-
-.navbar .navbar-links ul {
+.navbar-links{
+    width: 25%;
+}
+.navbar-links ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    gap: 15px;
 }
 
-.navbar .navbar-links ul li {
-    margin: 0 35px;
+.navbar-links ul li {
+    flex: 1;
+    text-align: center;
     padding-top: 20px;
 }
 
-.navbar .navbar-links ul li:hover {
+.navbar-links ul li:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
     padding-top: 18px;
@@ -86,7 +93,6 @@ header {
 
 .searchform {
     display: flex;
-    flex-direction:row ;
     align-items:center ;
     margin: 20px 0;
     padding: 0 50px;
@@ -103,11 +109,6 @@ header {
     border-bottom-left-radius: 15px;
 }
 
-.fa-solid {
-    color: var(--main-color);
-    font-size: 20px;
-}
-
 form input {
     width: 200px;
     height: 45px;
@@ -115,6 +116,11 @@ form input {
     outline: none;
     padding-left: 15px;
     border: 1px solid var(--main-bg-color);
+}
+
+.searchform input::placeholder{
+    font-weight: bold;
+    color: black;
 }
 
 .searchform-btn {
@@ -145,10 +151,13 @@ form input {
 
 .filters, .filters-list {
     display: flex;
-    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.filters-list {
+    justify-content: space-around;
 }
 
 .filters h2 {
@@ -175,16 +184,20 @@ form input {
     background: none;
 }
 
+.fa-solid {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
 /****** end Filters ******/
 
 /****** Search Result ******/
 
 .search-result {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 0 50px;
 }
 
@@ -226,7 +239,6 @@ form input {
 
 .lodging-cards {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -365,7 +377,6 @@ form input {
 .activities-list {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
@@ -401,17 +412,17 @@ form input {
 
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     background-color: var(--main-bg-color);
     width: 100%;
     margin-top: 50px;
+    padding-left: 25px;
 }
 
 .footer-link {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 30%;
 }
 
 footer h2 {
@@ -494,7 +505,7 @@ footer li:hover{
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /*ligne de code conservée car elle est présente dans la base de code fournit par OC dans github*/
         justify-content: space-between;
     }
 
@@ -582,7 +593,7 @@ footer li:hover{
     }
 
     .introduction {
-        padding: 0 8px;
+        padding: 0 10px;
     }
 
     .introduction h1 {
@@ -599,8 +610,13 @@ footer li:hover{
     /****** Search Bar mob ******/
 
     .searchform {
-        padding: 8px;
+        padding: 30px 0;
+        margin: auto;
     }
+
+    .searchform input {
+        width: 100%;
+}
 
     .searchform-icon {
         display: flex;
@@ -608,10 +624,11 @@ footer li:hover{
         align-items: center;
         width: 45px;
         height: 45px;
-        border-top-right-radius: 15px;
+        border-radius: 15px;
         border-bottom-right-radius : 15px;
         border: none;
         background-color: var(--main-color);
+        margin-left: -15px;
     }
 
     .searchform-btn {
@@ -627,20 +644,36 @@ footer li:hover{
     /****** Filters mob ******/
 
     .filters {
-        padding: 0 8px;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .filters-list {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
     }
 
     .filters h2 {
         font-size: 18px;
         margin: 0;
+        
     }
 
     .filters-btn {
-        padding: 10px 12px;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 13px;
     }
 
     .filters-btn span {
-        font-size: 15px;
+        font-size: 13px;
+        font-weight: bold;
+        padding-left: 8px;
     }
 
     /****** end Filters ******/
@@ -781,6 +814,7 @@ footer li:hover{
 
     .footer-link {
         margin-bottom: 20px;
+        width: 60%;
     }
 
     .footer-link h2 {
