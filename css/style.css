@@ -455,9 +455,19 @@ footer li:hover{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    
+
+    /****** Header Tab ******/
+
     header, .introduction, .searchform, .filters, .search-result, .main-container {
-        padding-left: 30px;
+        padding: 0 30px;
     }
+    
+    .navbar-links {
+        width: 40%;
+    }
+
+    /****** end Header Tab ******/
 
     /****** Hébergemetns and populaires Tab ******/
 
@@ -536,8 +546,8 @@ footer li:hover{
 
     /****** Footer Tab ******/
 
-    footer {
-        gap: 150px;
+    .footer-link{
+        width: 30%;
     }
 
     /****** end Footer Tab ******/
