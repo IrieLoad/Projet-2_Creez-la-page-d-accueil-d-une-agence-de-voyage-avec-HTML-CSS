@@ -109,6 +109,10 @@ header {
     border-bottom-left-radius: 15px;
 }
 
+.icon-maps .fa-location-dot {
+    color: black;
+}
+
 form input {
     width: 200px;
     height: 45px;
@@ -137,6 +141,10 @@ form input {
 
 .searchform-icon {
     display: none;
+}
+
+.searchform-icon .icon-search {
+    color: white;
 }
 
 /****** end Search Bar ******/
@@ -215,6 +223,7 @@ form input {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .hebergements-and-populaires section {
@@ -415,7 +424,8 @@ footer {
     background-color: var(--main-bg-color);
     width: 100%;
     margin-top: 50px;
-    padding-left: 25px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .footer-link {
